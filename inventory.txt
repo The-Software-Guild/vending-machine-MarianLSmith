@@ -1,0 +1,6 @@
+B2:Lion:0.78:19:
+A2:Twix:0.85:19:
+B3:Malteasers:0.9:20:
+A3:Galaxy:0.7:19:
+B1:Aero:0.54:19:
+A1:Mars Bar:0.65:20:
