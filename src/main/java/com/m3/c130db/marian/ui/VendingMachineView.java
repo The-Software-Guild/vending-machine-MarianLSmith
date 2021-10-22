@@ -97,28 +97,6 @@ public class VendingMachineView {
         io.print(changeString);
     }
 
-//    public void displayChangeBreakdown (BigDecimal nTenPounds,
-//                                        BigDecimal nFivePounds,
-//                                        BigDecimal nTwoPounds,
-//                                        BigDecimal nOnePounds,
-//                                        BigDecimal nFiftyPence,
-//                                        BigDecimal nTwentyPence,
-//                                        BigDecimal nTenPence,
-//                                        BigDecimal nFivePence,
-//                                        BigDecimal nTwoPence,
-//                                        BigDecimal nOnePence) {
-//        io.print("Your change breakdown is: " );
-//        io.print("Ten Pounds = " + nTenPounds);
-//        io.print("Five Pounds = " + nFivePounds);
-//        io.print("Two Pounds = " + nTwoPounds);
-//        io.print("One Pounds = " + nOnePounds);
-//        io.print("Fifty Pence = " + nFiftyPence);
-//        io.print("Twenty Pence = " + nTwentyPence);
-//        io.print("Ten Pence = " + nTenPence);
-//        io.print("Five Pence = " + nFivePence);
-//        io.print("Two Pence = " + nTwoPence);
-//        io.print("One Pence = " + nOnePence);
-//}
 }
 
 

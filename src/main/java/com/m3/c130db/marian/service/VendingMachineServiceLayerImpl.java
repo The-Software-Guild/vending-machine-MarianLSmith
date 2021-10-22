@@ -59,16 +59,14 @@ public class VendingMachineServiceLayerImpl implements VendingMachineServiceLaye
         BigDecimal currentBalance = new BigDecimal("0");
         BigDecimal outstandingBalance = item.getCost().subtract(currentBalance);
         view.displayItemInfo(item);
-//        try {
+
             do {
-                view.displayTransactionInfo(currentBalance, outstandingBalance);
-                BigDecimal additionalCash = new BigDecimal(view.getCash());
-                currentBalance = currentBalance.add(additionalCash);
-                outstandingBalance = item.getCost().subtract(currentBalance);
-                transactionComplete = (outstandingBalance.compareTo(new BigDecimal("0")) <= 0);
+            view.displayTransactionInfo(currentBalance, outstandingBalance);
+            BigDecimal additionalCash = new BigDecimal(view.getCash());
+            currentBalance = currentBalance.add(additionalCash);
+            outstandingBalance = item.getCost().subtract(currentBalance);
+            transactionComplete = (outstandingBalance.compareTo(new BigDecimal("0")) <= 0);
             } while (!transactionComplete);
-//        }
-//        catch (Exception e){}
 
 
         if (transactionComplete) {
@@ -81,8 +79,6 @@ public class VendingMachineServiceLayerImpl implements VendingMachineServiceLaye
                     Change.ONEPOUND, Change.FIFTYPENCE, Change.TWENTYPENCE, Change.TENPENCE,
                     Change.FIVEPENCE, Change.TWOPENCE, Change.ONEPENCE);
             view.displayChangeBreakdown(changeString);
-
-
             }
         return transactionComplete;
     }
@@ -106,6 +102,5 @@ public class VendingMachineServiceLayerImpl implements VendingMachineServiceLaye
     public void writeAuditEntry(String entry) throws VendingMachinePersistenceException {
         auditDao.writeAuditEntry(entry);
     }
-
-    }
+}
 
